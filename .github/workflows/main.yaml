@@ -3,7 +3,9 @@ on: push
 
 jobs:
   build:
-    name: Laravel Build
+    name: Laravel/GraphQl Build
     runs-on: ubuntu-20.04
     steps:
-      - users: actions/checkout@v1
+      - uses: actions/checkout@v1
+      - uses: ./.github/actions/composer
+      - run: ./vendor/bin/phpcs

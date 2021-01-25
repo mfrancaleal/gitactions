@@ -6,7 +6,7 @@ jobs:
     name: Laravel/GraphQl Build
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@master
       - uses: ./.github/actions/composer
       - uses: ./.github/actions/config-laravel
       - run: ./vendor/bin/phpunit

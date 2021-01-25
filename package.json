@@ -14,5 +14,10 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "@graphql-inspector/config": "^2.3.0",
+        "graphql": "^15.4.0",
+        "vue": "^2.6.12"
     }
 }

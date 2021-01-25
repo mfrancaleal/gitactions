@@ -69,6 +69,6 @@
        PEAR standard exists inside the PHP_CodeSniffer install
        directory.
     -->
-        <rule ref="PSR2"/>
+    </rule>
 
-    </ruleset>
+</ruleset>

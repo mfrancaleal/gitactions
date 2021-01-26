@@ -12,7 +12,7 @@ jobs:
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
       - name: GraphQl Inspector
-        uses: kamilkisiela/graphql-inspector@master
+       # uses: kamilkisiela/graphql-inspector@master
         run:
           cat /home/runner/work/gitactions/gitactions/       
         with:

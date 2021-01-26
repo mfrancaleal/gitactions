@@ -1,11 +1,14 @@
 name: Laravel Workflows
 on: push
 
+defaults:
+  run:
+    working-directory: ./graphql 
+
 jobs:
   build:
     name: Laravel/GraphQl Build
     runs-on: ubuntu-20.04
-      working-directory: ./graphql 
     steps:
       - uses: actions/checkout@master
       - uses: ./.github/actions/composer

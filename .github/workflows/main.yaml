@@ -12,12 +12,10 @@ jobs:
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
       - name: GraphQl Inspector
-       # uses: kamilkisiela/graphql-inspector@master
-        run: 
-          cd ~
-        run:   
-          find -name schema.graphql        
-        # with:
-        #   github-token: ${{ secrets.GITHUB_TOKEN }}
-        #   schema: 'main:schema.graphql'
+        uses: kamilkisiela/graphql-inspector@master
+        run:
+          working-directory: ./graphql       
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          schema: 'main:schema.graphql'
   

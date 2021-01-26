@@ -6,7 +6,9 @@ jobs:
   test:
     name: Check Schema
     runs-on: ubuntu-latest
-
+    defaults:
+      run: 
+        working-directory: graphql 
     steps:
       - name: Checkout
         uses: actions/checkout@master

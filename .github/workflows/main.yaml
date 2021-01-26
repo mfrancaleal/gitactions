@@ -1,4 +1,4 @@
-name: Laravel Workflow
+name: Laravel Workflow Job
 on: push
 
 jobs:

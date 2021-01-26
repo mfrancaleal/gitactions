@@ -14,7 +14,8 @@ jobs:
       - name: GraphQl Inspector
        # uses: kamilkisiela/graphql-inspector@master
         run:
-          cat /home/runner/work/gitactions/gitactions/       
+          cd /home/runner/work/gitactions/gitactions/
+          ls       
         # with:
         #   github-token: ${{ secrets.GITHUB_TOKEN }}
         #   schema: 'main:schema.graphql'

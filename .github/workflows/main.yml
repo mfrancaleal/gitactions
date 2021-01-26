@@ -12,9 +12,9 @@ jobs:
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
       - uses: kamilkisiela/graphql-inspector@master
+      - name: GraphQl Inspector
+        working-directory: ./graphql       
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           schema: 'main:schema.graphql'
-            run:
-              working-directory: ../graphql 
   

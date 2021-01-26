@@ -5,6 +5,8 @@ jobs:
   build:
     name: Laravel/GraphQl Build
     runs-on: ubuntu-20.04
+    env:
+      working-directory: ./graphql 
     steps:
       - uses: actions/checkout@master
       - uses: ./.github/actions/composer
@@ -12,9 +14,8 @@ jobs:
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
       - uses: kamilkisiela/graphql-inspector@master
+        working-directory: ${{ env.working-directory  }} 
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           schema: 'main:schema.graphql'
-            run:
-              working-directory: ../graphql 
   

@@ -13,8 +13,8 @@ jobs:
       - run: ./vendor/bin/phpcs
       - name: GraphQl Inspector
        # uses: kamilkisiela/graphql-inspector@master
-        run:
-          cd ~
+        run: |
+          cd ~ \
           find -name schema.graphql        
         # with:
         #   github-token: ${{ secrets.GITHUB_TOKEN }}

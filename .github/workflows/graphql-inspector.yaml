@@ -1,4 +1,4 @@
-name: GraphQl Inspector
+name: GraphQL Inspector
 
 on: [push]
 
@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
       - uses: kamilkisiela/graphql-inspector@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

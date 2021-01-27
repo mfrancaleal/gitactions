@@ -10,7 +10,7 @@ jobs:
       run:
         working-directory: graphql
     steps:
-        run: |
+      - run: |
           cd /home/runner/work/gitactions/gitactions
           ls
       - name: Checkout

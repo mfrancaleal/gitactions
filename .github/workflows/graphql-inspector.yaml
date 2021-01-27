@@ -1,3 +1,5 @@
+version: 2
+
 name: GraphQL Inspector
 on:
   push:
@@ -8,18 +10,11 @@ defaults:
     working-directory: graphql
 
 jobs:
-  graphql-inspector:
-    name: Trigger GraphQL Inspector
-    runs-on: ubuntu-18.04
-    timeout-minutes: 5
+  build:
+    docker:
+      image: kamilkisiela/graphql-inspector
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.1
-      - run: |
-          ls -la  
-      - name: graphql-inspector
-        uses: kamilkisiela/graphql-inspector@v2.0.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          schema: 'master:schema.graphql'
-          annotations: true
+      - checkout
+      - run: 
+          name: graphql-inspector
+          command: 'graphql-inspector diff "git:origin/master:./schema.graphql" "schema.graphql"'

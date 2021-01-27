@@ -13,8 +13,8 @@ jobs:
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
       - run: |
-          cd /home/runner/work/gitactions/gitactions
-          ls
+          cd ~
+          find -name schema.graphql
       - name: GraphQl Inspector
         uses: kamilkisiela/graphql-inspector@master
         with:

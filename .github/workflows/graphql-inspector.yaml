@@ -13,5 +13,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           schema: 'main:graphql/schema.graphql'
-        command: graphql-inspector validate
-                 './documents/*graphql' graphql/schema.graphql 
+      - run:
+          graphql-inspector validate './documents/*graphql' graphql/schema.graphql 

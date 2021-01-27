@@ -1,14 +1,5 @@
 version: 2
 
-name: GraphQL Inspector
-on:
-  push:
-    branches-ignore: 
-      - master
-defaults:
-  run:
-    working-directory: graphql
-
 jobs:
   build:
     docker:

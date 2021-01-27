@@ -15,11 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.1.1
-      - run: |
-          cat schema.graphql  
       - name: graphql-inspector
         uses: kamilkisiela/graphql-inspector@v2.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           schema: 'main:graphql/schema.graphql'
-          annotations: true

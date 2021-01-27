@@ -1,9 +1,0 @@
-jobs:
-  build:
-    docker:
-      image: kamilkisiela/graphql-inspector
-    steps:
-      - checkout
-      - run: 
-          name: graphql-inspector
-          command: 'graphql-inspector diff "git:origin/master:./schema.graphql" "schema.graphql"'

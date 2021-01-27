@@ -1,5 +1,3 @@
-version: 2
-
 name: Laravel Workflows
 on: push
 

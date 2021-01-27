@@ -15,5 +15,5 @@ jobs:
       - uses: kamilkisiela/graphql-inspector@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          schema: 'master:schema/local/schema.graphql'
+          schema: 'master:graphql/schema.graphql'
           annotations: true

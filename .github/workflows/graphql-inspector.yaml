@@ -1,0 +1,24 @@
+name: GraphQL Inspector
+on:
+  push:
+    branches-ignore: 
+      - master
+defaults:
+  run:
+    working-directory: graphql
+
+jobs:
+  graphql-inspector:
+    name: Trigger GraphQL Inspector
+    runs-on: ubuntu-18.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.1.1
+        
+      - name: graphql-inspector
+        uses: kamilkisiela/graphql-inspector@v2.0.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          schema: 'master:schema/local/schema.graphql'
+          annotations: true

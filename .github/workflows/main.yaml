@@ -12,3 +12,14 @@ jobs:
       - uses: ./.github/actions/config-laravel
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
+      - run: |
+          cd /home/runner/work/gitactions/gitactions/gitactions
+          ls
+          cd ~
+          find -name schema.graphql
+      - name: GraphQl Inspector
+        uses: kamilkisiela/graphql-inspector@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          schema: 'main:schema.graphql'
+  

@@ -1,4 +1,4 @@
-name: Laravel Workflows
+name: Laravel Workflow
 on: [push, pull_request]
 
 jobs:

@@ -1,8 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200">
-    <img src="https://graphql.org/img/logo.svg" width="80" height="80">
-    <img src="https://graphql-inspector.com/img/logo.svg" width="150" height="100">
-     <img src="https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" width="70" height="50">GitHub Actions
+    <img src="public/img/git.png" alt="log tecnology">
 </p>
 
 <p align="center">

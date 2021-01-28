@@ -1,0 +1,44 @@
+extend type Query {
+    authors: [Author!]! @all @guard
+    author(id: ID! @eq): Author @find
+}
+
+type Author{
+    id: ID!
+    name: String!
+    nationality: String!
+    posts: [Post!]!
+}
+
+extend type Mutation @guard {
+    #CONVENCIONAL
+    createAuthor(input: AuthorCreateInput! @spread): ReturnAuthor!
+    @field(resolver: "AuthorMutation@create")
+    #GRAPHQL
+    #createAuthor(input: AuthorCreateInput! @spread): Author! @create
+
+    #CONVENCIONAL
+    #   updateAuthor(input: AuthorUpdateInput! @spread): ReturnAuthor!
+    #   @field(resolver: "AuthorMutation@update")
+    #GRAPHQL
+    updateAuthor(id: ID!, name: String!, nationality: String!): Author @update
+
+    deleteAuthor(id: ID!):ReturnAuthor!
+    @field(resolver: "AuthorMutation@delete")
+}
+input AuthorCreateInput @validator{
+    name: String!
+    nationality: String!
+}
+input AuthorUpdateInput @validator{
+    id: ID!
+    name: String @rules(apply: ["required", "unique:authors,"])
+    nationality: String @rules(apply: ["required"])
+
+}
+
+type ReturnAuthor{
+    status: String!
+    message: String!
+}
+

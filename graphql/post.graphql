@@ -1,0 +1,12 @@
+extend type Query{
+    posts: [Post!]! @paginate @guard
+    post(id: ID! @eq): Post @find
+}
+
+type Post{
+    author: Author
+    comments: [Comment!]!
+    genre: Genre!
+    title: String!
+    text: String!
+}

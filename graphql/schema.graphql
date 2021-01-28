@@ -15,10 +15,3 @@ type Query{
     me: User @auth
 }
 
-type User {
-    id: ID!
-    name: String!
-    email: String!
-    password: String!
-
-}

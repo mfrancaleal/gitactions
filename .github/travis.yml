@@ -1,4 +1,19 @@
+dist: bionic
 language: php
-rvm:
- - 2.2
- - jruby
+php:
+  - 8.0
+services:
+  - mysql
+cache:
+  directories:
+    - node_modules
+    - vendor
+before_script:
+  - cp .env.example .env
+  - sudo mysql -e 'create database homestead;'
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+  - php artisan key:generate
+  - php artisan migrate
+script:
+  - vendor/bin/phpunit

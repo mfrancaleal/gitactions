@@ -8,9 +8,9 @@ type Query{
     me: User @auth
 }
 
-#import auth.graphql
-#import user.graphql
-#import author.graphql
-#import post.graphql
-#import comment.graphql
-#import genre.graphql
+#import  graphql/auth.graphql
+#import  graphql/user.graphql
+#import  graphql/author.graphql
+#import  graphql/post.graphql
+#import  graphql/comment.graphql
+#import  graphql/genre.graphql

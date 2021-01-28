@@ -1,5 +1,5 @@
 # Enabling / Disabling Schema Diff
-diff: true # enabled by default
+#diff: true # enabled by default
 
 # Customizing Schema Diff
 diff:

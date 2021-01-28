@@ -16,7 +16,7 @@ diff:
   # Limit a list of changes in summary to max 150
   summaryLimit: 150
 
-# Customizing Schema Validate 
+# Customizing Schema Validates
 validate:
   # Pull Request annotations (enabled by default)
   annotations: true

@@ -1,0 +1,15 @@
+type Mutation {
+    login(
+        email: String! @rules(apply: ["email"]),
+        password: String!,
+        type_user: String!
+    ): ErrorAuth!
+    @field(resolver: "AuthMutator@login")
+   # logout: User @guard @field(resolver: "AuthMutator@logout")
+}
+
+type ErrorAuth{
+    status: String!
+    message: String!
+    token: String
+}

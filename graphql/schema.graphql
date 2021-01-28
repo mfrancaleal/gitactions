@@ -1,36 +1,17 @@
-"A date string with format `Y-m-d`, e.g. `2011-05-23`."
-scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+#"A date string with format `Y-m-d`, e.g. `2011-05-23`."
+#scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+#
+#"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+#scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
 
-"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
-scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+#import auth.graphql
+#import user.graphql
+#import author.graphql
+#import post.graphql
+#import comment.graphql
+#import genre.graphql
 
-type Query {
-    users: [User!]! @paginate(defaultCount: 10)
-    user(id: ID @eq): User @find
-}
+type Query{
+    me: User @auth
 
-type User {
-    id: ID!
-    name: String!
-    email: String!
-    nationaslity: String!
-    age: Int!
-    age: Int!
-    age: Int!
-    created_at: DateTime!
-    updated_at: DateTime!
-    updated_sat: DateTime!
-}
-
-"""
-DESCRIBE
-"""
-type User {
-    "dEXCRIBE ID. DSDDSD"
-    id: ID!
-    name: String!
-    email: String!
-    email: String!
-    created_at: DateTime!
-    updated_at: DateTime!
 }

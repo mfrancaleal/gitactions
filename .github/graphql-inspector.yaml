@@ -17,7 +17,7 @@ notifications:
   discord: 'webhook url'
   webhook: 'webhook url'
 
-# Your main / target branch
+# Your main / target branch.
 branch: 'develop'
 
 # A path to a schema configs

@@ -20,10 +20,15 @@ type User {
     updated_at: DateTime!
 }
 
+"""
+DESCRIBE
+"""
 type User {
+    "dEXCRIBE ID."
     id: ID!
     name: String!
-    email: 
+    email: String!
+    email: String!
     created_at: DateTime!
     updated_at: DateTime!
 }

@@ -13,9 +13,23 @@ type User {
     id: ID!
     name: String!
     email: String!
-    nationality: String!
-    nationality: String!
+    nationaslity: String!
+    natiosnality: String!
     age: Int!
+    created_at: DateTime!
+    updated_at: DateTime!
+    updated_sat: DateTime!
+}
+
+"""
+DESCRIBE
+"""
+type User {
+    "dEXCRIBE ID. DSDDSD"
+    id: ID!
+    name: String!
+    email: String!
+    email: String!
     created_at: DateTime!
     updated_at: DateTime!
 }

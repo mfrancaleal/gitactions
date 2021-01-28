@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.com/mfrancaleal/gitactions.svg?branch=main" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://travis-ci.com/mfrancaleal/gitactions"><img src="https://travis-ci.com/mfrancaleal/gitactions.svg?branch=main" alt="Build Status"></a>
+<a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/downloads/mfrancaleal/gitactions/total" alt="Total Downloads"></a>
+<a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/v/tag/mfrancaleal/gitactions" alt="Latest by Data"></a>
+<a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/license/mfrancaleal/gitactions" alt="License"></a>
 </p>
 
 ## About Project

@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Laravel/GraphQl Build
+    name: Laravel
     runs-on: ubuntu-20.04
     
     steps:
@@ -12,9 +12,3 @@ jobs:
       - uses: ./.github/actions/config-laravel
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
-      # - name: graphql-inspector
-      #   uses: kamilkisiela/graphql-inspector@v2.0.1
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     schema: 'main:graphql/schema.graphql'
-  

@@ -1,5 +1,5 @@
 # Enabling / Disabling Schema Diff
-diff: true # enabled by default
+#diff: true # enabled by default
 
 # Customizing Schema Diff
 diff:
@@ -25,5 +25,5 @@ notifications:
 # Your main / target branch
 branch: 'main'
 
-# A path to a schema config
+# A path to a schema configs
 schema: 'graphql/schema.graphql'

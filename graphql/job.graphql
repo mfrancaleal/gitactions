@@ -1,0 +1,18 @@
+type Query {
+    jobsByStatus(
+        status: JobStatus! @builder(method: "App\\Models\\Job@byStatus")
+    ): [Job!]! @paginate
+}
+
+type Job{
+    id: ID!
+    title: String!
+    status: JobStatus!
+    user: User @belongsTo
+}
+
+enum JobStatus {
+    QUEUED
+    PROCESSING
+    COMPLETE
+}

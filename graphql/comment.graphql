@@ -1,0 +1,10 @@
+extend type Query{
+    comments: [Comment!]! @paginate @guard
+    comment(id: ID! @eq): Comment @find
+}
+
+type Comment{
+    commentary: String!
+    post: Post
+    author: Author
+}

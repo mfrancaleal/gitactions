@@ -1,0 +1,8 @@
+extend type Query{
+    genres: [Genre!]! @paginate @guard
+    genre(id: ID! @eq): Genre @find
+}
+
+type Genre{
+    genre: String!
+}

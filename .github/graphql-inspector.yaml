@@ -18,7 +18,7 @@ notifications:
   webhook: 'webhook url'
 
 # Your main / target branch
-#branch: 'DEV-001'
+branch: 'develop'
 
 # A path to a schema configs
 schema: 'graphql/schema.graphql'

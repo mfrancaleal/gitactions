@@ -2,12 +2,6 @@ language: php
 
 php:
   - 8.0
-services:
-  - mysql
-mysql:
-  database: laravel
-  username: root
-  encoding: utf8
 
 cache:
   directories:
@@ -16,11 +10,9 @@ cache:
 
 before_script:
   - cp .env.example .env
-  - sudo mysql -e 'create database homestead;'
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - php artisan key:generate
-  - php artisan migrate
 
 script:
   - vendor/bin/phpunit

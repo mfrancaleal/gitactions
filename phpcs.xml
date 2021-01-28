@@ -17,7 +17,7 @@
     Note that specifying any file or directory path
     on the command line will ignore all file tags.
     -->
-    <rule ref="PSR2"/>
+    <rule ref="PSR1"/>
 
     <file>app</file>
     <file>config</file>

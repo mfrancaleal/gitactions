@@ -16,7 +16,7 @@ diff:
   # Limit a list of changes in summary to max 150
   summaryLimit: 150
 
-# Notifications (disabled by default)
+# NNotifications (disabled by default)
 notifications:
   slack: 'webhook url'
   discord: 'webhook url'

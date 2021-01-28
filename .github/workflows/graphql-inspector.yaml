@@ -1,15 +1,14 @@
-name: GraphQL Inspector
-on: [push]
+# name: GraphQL Inspector
+# on: [push]
 
-jobs:
-  graphql-inspector:
-    name: Trigger GraphQL Inspector
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.1
+# jobs:
+#   graphql-inspector:
+#     name: Trigger GraphQL Inspector
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2.1.1
       
-      - uses: kamilkisiela/graphql-inspector@v2.0.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          schema: 'main:graphql/schema.graphql'
+#       - uses: kamilkisiela/graphql-inspector@v2.0.1
+#         with:
+#           github-token: ${{ secrets.GITHUB_TOKEN }}

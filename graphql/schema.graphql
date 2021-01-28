@@ -14,7 +14,8 @@ type User {
     name: String!
     email: String!
     nationaslity: String!
-    natiosnality: String!
+    age: Int!
+    age: Int!
     age: Int!
     created_at: DateTime!
     updated_at: DateTime!

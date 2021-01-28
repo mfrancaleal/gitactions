@@ -3,12 +3,6 @@ language: php
 php:
   - 7.4
   - 8.0
-services:
-  - mysql
-mysql:
-  database: laravel
-  username: root
-  encoding: utf8
 
 cache:
   directories:

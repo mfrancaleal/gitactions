@@ -24,7 +24,7 @@ type User {
 DESCRIBE
 """
 type User {
-    "dEXCRIBE ID."
+    "dEXCRIBE ID. DSDDSD"
     id: ID!
     name: String!
     email: String!

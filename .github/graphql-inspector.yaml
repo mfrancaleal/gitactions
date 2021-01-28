@@ -16,6 +16,21 @@ diff:
   # Limit a list of changes in summary to max 150
   summaryLimit: 150
 
+# Customizing Schema Validate 
+validate:
+  # Pull Request annotations (enabled by default)
+  annotations: true
+  # Fail on breaking changes or force SUCCESS when disabled (enabled by default)
+  failOnBreaking: true
+  # Intercept list of detected changes and decide whether or not to accept a Pull Request
+  intercept: '<url>'
+  # Merge Pull Request's branch with the target branch to get the schema (disabled by default)
+  experimental_merge: false
+  # Label to mark Pull Request introducing breaking changes as safe and expected ('approved-breaking-change' by default)
+  approveLabel: 'approved-breaking-change'
+  # Limit a list of changes in summary to max 150
+  summaryLimit: 150
+
 # NNotifications (disabled by default)
 notifications:
   slack: 'webhook url'

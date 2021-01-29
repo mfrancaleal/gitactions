@@ -11,7 +11,7 @@
 
 ## About Project
 
-This is a basic structure of a project in Laravel with Graphql (Lighthouse PHP), GraphQL Inspector on board of Github Actions:
+This is a basic structure of a project in Laravel with Graphql (Lighthouse PHP), GraphQL Inspector on board of Github Actions. The authentication is with Laravel Sanctum. The files are in the folders:
 
 - GraphQL: [Schemas: _./graphql_ Files: _App/GraphQL_].
 - GitHub Actions: [_.github_].
@@ -22,7 +22,8 @@ This is a basic structure of a project in Laravel with Graphql (Lighthouse PHP),
 - [GraphQL](https://graphql.org).
 - [GraphQL Inspector](https://graphql-inspector.com)
 - [GitHub Actions](https://github.com/features/actions)
-
+- [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum)
+- [Lighthouse](https://lighthouse-php.com/)
 
 ## Contributing
 

@@ -18,7 +18,7 @@ notifications:
   webhook: 'webhook url'
 
 # Your main / target branch.
-branch: 'develop'
+branch: ${{ env.preview }}
 
 # A path to a schema configs
 schema: 'graphql/schema.graphql'
@@ -37,3 +37,5 @@ jobs:
       - uses: kamilkisiela/graphql-inspector@v2.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Graph QL Test
+        service: graphql-test    

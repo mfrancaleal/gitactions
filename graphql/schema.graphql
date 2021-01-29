@@ -8,6 +8,15 @@ type Query{
     me: User @auth
 }
 
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    password: String!
+    password: String!
+}
+
 #import  graphql/auth.graphql
 #import  graphql/user.graphql
 #import  graphql/author.graphql

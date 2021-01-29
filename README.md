@@ -5,13 +5,13 @@
 <p align="center">
 <a href="https://travis-ci.com/mfrancaleal/gitactions"><img src="https://travis-ci.com/mfrancaleal/gitactions.svg?branch=main" alt="Build Status"></a>
 <a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/downloads/mfrancaleal/gitactions/total" alt="Total Downloads"></a>
-<a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/v/tag/mfrancaleal/gitactions" alt="Latest by Data"></a>
-<a href="https://github.com/mfrancaleal/gitactions"><img src="https://img.shields.io/github/license/mfrancaleal/gitactions" alt="License"></a>
+<a href="https://github.com/mfrancaleal/gitactions/tags"><img src="https://img.shields.io/github/v/tag/mfrancaleal/gitactions" alt="Latest by Data"></a>
+<a href="https://github.com/mfrancaleal/gitactions/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/mfrancaleal/gitactions" alt="License"></a>
 </p>
 
 ## About Project
 
-This is a basic structure of a project in Laravel with Graphql (Lighthouse PHP), GraphQL Inspector on board of Github Actions:
+This is a basic structure of a project in Laravel with Graphql (Lighthouse PHP), GraphQL Inspector on board of Github Actions. The files are in the directories:
 
 - GraphQL: [Schemas: _./graphql_ Files: _App/GraphQL_].
 - GitHub Actions: [_.github_].

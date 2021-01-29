@@ -1,5 +1,5 @@
-extend type Query{
-    posts: [Post!]! @paginate @guard
+extend type Query @guard{
+    posts: [Post!]! @paginate
     post(id: ID! @eq): Post @find
 }
 

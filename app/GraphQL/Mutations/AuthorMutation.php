@@ -8,16 +8,17 @@ class AuthorMutation
 {
     public function __construct(
         private AuthorService $authorService
-    ){}
+    ) {}
 
+    /**Teste */
     public function create($root, array $args): array
     {
-       return $this->authorService->create($args);
+        return $this->authorService->create($args);
     }
 
     public function update($root, array $args): array
     {
-       return $this->authorService->update($args, $args['id']);
+        return $this->authorService->update($args, $args['id']);
     }
 
     public function delete($root, array $args): array

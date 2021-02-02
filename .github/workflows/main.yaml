@@ -12,3 +12,4 @@ jobs:
       - uses: ./.github/actions/config-laravel
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
+      - run: ./vendor/bin/phpstan analyse --memory-limit=2G
